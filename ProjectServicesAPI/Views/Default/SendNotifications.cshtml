@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Notifications</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.9/signalr.min.js"></script>
+</head>
+<body>
+    <h1>SignalR Notifications</h1>
+    <div id="notificationContainer"></div>
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub")
+            .build();
+
+        connection.on("ReceiveNotification", function (message) {
+            console.log("Received notification:", message);
+            // Handle the notification as needed
+            var notificationElement = document.createElement("div");
+            notificationElement.innerHTML = message;
+            document.getElementById("notificationContainer").appendChild(notificationElement);
+        });
+
+        connection.start()
+            .then(function () {
+                console.log("SignalR connected");
+            })
+            .catch(function (error) {
+                console.error("SignalR connection error:", error);
+            });
+    </script>
+</body>
+</html>

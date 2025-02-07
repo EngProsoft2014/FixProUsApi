@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ba839d95a19c45f8b2707dd7272001c0" Name="Diagram1" ZoomLevel="187">
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_CallReason" Width="1.5" PointX="5.25" PointY="61.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Calls" Width="1.5" PointX="18.5" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Campaigns" Width="1.5" PointX="8.25" PointY="61.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Customers" Width="1.5" PointX="10.5" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_CustomersCategory" Width="1.5" PointX="5.25" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_CustomersCustomField" Width="1.5" PointX="5.25" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EmployeeAssignItems" Width="1.5" PointX="18.5" PointY="66.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EmployeeAssignItemsLogs" Width="1.5" PointX="21.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EmployeeCategory" Width="1.5" PointX="15.5" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EmployeeCustomField" Width="1.5" PointX="15.5" PointY="67.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Equipments" Width="1.5" PointX="15.5" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EquipmentsCustomField" Width="1.5" PointX="21.5" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Estimate" Width="1.5" PointX="29" PointY="59.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EstimateItemsServices" Width="1.5" PointX="34.25" PointY="60.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_InvoiceItemsServices" Width="1.5" PointX="39.5" PointY="60.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Member" Width="1.5" PointX="21.5" PointY="67.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Schedule" Width="1.5" PointX="26.75" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ScheduleDate" Width="1.5" PointX="42.5" PointY="66" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_SchedulePictures" Width="1.5" PointX="44.75" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_StripeAccount" Width="1.5" PointX="24.5" PointY="61.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Tax" Width="1.5" PointX="24.5" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_TimeSheet" Width="1.5" PointX="24.5" PointY="65.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_TransactionCustomersCustomField" Width="1.5" PointX="18.5" PointY="61.25" IsExpanded="true" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_CallReason1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Campaigns" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_Calls" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_CustomersCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Equipments_Tbl_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TransactionCustomersCustomField_Tbl_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TransactionCustomersCustomField_Tbl_CustomersCustomField" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItems_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItemsLogs_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_EmployeeCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_Estimate" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Estimate" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_Tax" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_SchedulePicture_Tbl_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK__Tbl_Sched__Sched__6F7F8B4B" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ItemsServices" Width="1.5" PointX="31.75" PointY="52.375" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItems_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItemsLogs_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_Tax" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_Tax1" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ScheduleMaterialReceipt" Width="1.5" PointX="44.75" PointY="55.125" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_Customers" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_Schedule" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_ScheduleDate" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ScheduleItemsServices" Width="1.5" PointX="47.75" PointY="60.5" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_Schedule" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_ScheduleDate" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_Tax" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_InvoiceScheduleDate" Width="1.5" PointX="44.75" PointY="61.875" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ScheduleEmployees" Width="1.5" PointX="50.75" PointY="60.875" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleEmployees_Tbl_EmployeeCategory" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceScheduleDate_Tbl_ScheduleDate" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleEmployees_Tbl_ScheduleDate" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Invoice" Width="1.5" PointX="37.25" PointY="59.25" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Payment" Width="1.5" PointX="42.5" PointY="58.25" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Customers" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Payment_Tbl_Customers" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Estimate" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Member" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Schedule" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Tax" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_Invoice" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceScheduleDate_Tbl_Invoice" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Payment_Tbl_Invoice" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Invoice" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Account" Width="1.5" PointX="0.75" PointY="57.125" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CallReason_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_CallReason" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Campaigns_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCategory_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCustomField_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItems_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItemsLogs_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCategory_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCustomField_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Equipments_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EquipmentsCustomField_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceScheduleDate_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Member_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Payment_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleEmployees_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_SchedulePicture_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_StripeAccount_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Tax_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TimeSheet_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TransactionCustomersCustomField_Tbl_Account" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EstimateScheduleDate" Width="1.5" PointX="47.75" PointY="68" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateScheduleDate_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateScheduleDate_Tbl_Estimate" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateScheduleDate_Tbl_ScheduleDate" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Branches" Width="1.5" PointX="27.5" PointY="68.625" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Branches_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CallReason_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Campaigns_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCategory_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCustomField_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItems_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItemsLogs_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCategory_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCustomField_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Equipments_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EquipmentsCustomField_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Member_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Payment_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_SchedulePicture_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_StripeAccount_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Tax_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TimeSheet_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TransactionCustomersCustomField_Tbl_Branches" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_EmployeeBranches" Width="1.5" PointX="34" PointY="72.5" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeBranches_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeBranches_Tbl_Branches" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ItemsServicesCategory" Width="1.5" PointX="37" PointY="72.375" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_ItemsServicesSubCategory" Width="1.5" PointX="39.25" PointY="72.375" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesCategory_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesSubCategory_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesCategory_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesSubCategory_Tbl_Branches" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_ItemsServices" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_ItemsServicesSubCategory" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesSubCategory_Tbl_ItemsServicesCategory" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_OneSignalNotification" Width="1.5" PointX="44.75" PointY="72" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_OneSignalNotification_Tbl_Account" ManuallyRouted="true" >
+          <ConnectorPoint PointX="0.99218500000000021" PointY="71.027975260416667" />
+          <ConnectorPoint PointX="0.99218500000000021" PointY="89.693203486195486" />
+          <ConnectorPoint PointX="44.375" PointY="89.693203486195486" />
+          <ConnectorPoint PointX="44.375" PointY="74.759013171874983" />
+          <ConnectorPoint PointX="44.75" PointY="74.759013171874983" />
+        </AssociationConnector>
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_OneSignalNotification_Tbl_Schedule" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_OneSignalNotification_Tbl_ScheduleDate" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_OurStripeAccount" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Employee" Width="1.5" PointX="31.75" PointY="61.375" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Employee_Tbl_Account" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Branches_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CallReason_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Calls_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Campaigns_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Customers_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCategory_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_CustomersCustomField_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK__Tbl_Emplo__Emplo__0E04126B" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK__Tbl_Emplo__Emplo__7FB5F314" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Employee_Tbl_EmployeeCategory" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItems_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeAssignItemsLogs_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeBranches_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeBranches_Tbl_Employee1" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCategory_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EmployeeCustomField_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Equipments_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Equipments_Tbl_Employee1" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EquipmentsCustomField_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Estimate_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateItemsServices_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_EstimateScheduleDate_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Invoice_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceItemsServices_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_InvoiceScheduleDate_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServices_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesCategory_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ItemsServicesSubCategory_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Member_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_OneSignalNotification_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_OneSignalNotification_Tbl_Employee1" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Payment_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Schedule_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleDate_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleEmployees_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleEmployees_Tbl_Employee1" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleItemsServices_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_ScheduleMaterialReceipt_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_SchedulePicture_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_StripeAccount_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Tax_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TimeSheet_Tbl_Employee" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TimeSheet_Tbl_Employee1" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_TransactionCustomersCustomField_Tbl_Employee" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Com_Main" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_AccountPayment" Width="1.5" PointX="3" PointY="61.125" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_AccountPayment_Tbl_Account1" />
+        <EntityTypeShape EntityType="ProjectServicesDBModel.Tbl_Plans" Width="1.5" PointX="0.75" PointY="60.625" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_Account_Tbl_Plans" />
+        <AssociationConnector Association="ProjectServicesDBModel.FK_Tbl_AccountPayment_Tbl_Account" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
