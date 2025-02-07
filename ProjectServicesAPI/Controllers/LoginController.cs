@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNet.SignalR;
+﻿//using Microsoft.AspNet.SignalR;
 using Org.BouncyCastle.Asn1.X509;
 using FixProUsApi.DAL;
 using FixProUsApi.DTO;
@@ -13,13 +13,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Microsoft.AspNetCore.SignalR;
 
 namespace FixProUsApi.Controllers
 {
     [RoutePrefix("api/Login")]
     public class LoginController : ApiController
     {
+        IHubContext<ChatHub> _hubContext;
+        public LoginController(IHubContext<ChatHub> hubContext) 
+        {
+            _hubContext = hubContext;
 
+        }
         private StripeCustomer GetCustomer(string FirstName, string LastName, string Cvc, int? ExpirationMonth, int? ExpirationYear, string CardNumber, string SecretKey)
         {
             SourceCard SCard = new SourceCard
@@ -98,8 +104,8 @@ namespace FixProUsApi.Controllers
                             //var hubContext = GlobalHost.ConnectionManager.GetHubContext<ChatHub>();
                             //hubContext.Clients.All.ReceiveMessage(PlayerIdAfterInsert, UserName, "", "");
 
-                            ChatHub oChatHub = new ChatHub();
-                            oChatHub.Send(PlayerIdAfterInsert, UserName, "", "").Wait();
+                            //ChatHub oChatHub = new ChatHub();
+                            _hubContext.Clients.All.SendAsync("ReceiveMessage", PlayerIdAfterInsert, UserName, "", "").Wait();
                             
                         }
 
@@ -173,11 +179,12 @@ namespace FixProUsApi.Controllers
         [Route("GetChangeUserData")]
         public HttpResponseMessage GetChangeUserData(int AccountId, int EmpId, string UserName, string Password)
         {
-            var hubContext = GlobalHost.ConnectionManager.GetHubContext<ChatHub>();
-            hubContext.Clients.All.ChangeUserData(AccountId.ToString(), EmpId.ToString(), UserName, Password);
+            //var hubContext = GlobalHost.ConnectionManager.GetHubContext<ChatHub>();
+            //hubContext.Clients.All.ChangeUserData(AccountId.ToString(), EmpId.ToString(), UserName, Password);
+
+            _hubContext.Clients.All.SendAsync("ChangeUserData", AccountId.ToString(), EmpId.ToString(), UserName, Password).Wait();
 
             return Request.CreateResponse(HttpStatusCode.OK, UserName);
-
         }
 
 
