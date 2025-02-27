@@ -105,7 +105,7 @@ namespace FixProUsApi.Controllers
                             //hubContext.Clients.All.ReceiveMessage(PlayerIdAfterInsert, UserName, "", "");
 
                             //ChatHub oChatHub = new ChatHub();
-                            _hubContext.Clients.All.SendAsync("ReceiveMessage", PlayerIdAfterInsert, UserName, "", "").Wait();
+                            _hubContext.Clients.All.SendAsync("ReceiveMessage", PlayerIdAfterInsert, UserName, "", "");
                             
                         }
 
